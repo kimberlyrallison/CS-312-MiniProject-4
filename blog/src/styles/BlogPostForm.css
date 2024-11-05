@@ -1,0 +1,37 @@
+.editFormGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "label"
+    "form";
+    position: relative;
+    border-radius: 10px;
+    position: relative;
+    background-color: whitesmoke;
+    left: 25%;
+    width: 50%;
+    padding: 10px;
+}
+.label {
+    grid-area: label;
+    text-align: center;
+    position: relative;
+    background-color: dimgrey;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: x-large;
+}
+.form {
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    font-family: monospace;
+    font-size: large;
+}
+.formItem {
+    padding: 10px;
+}

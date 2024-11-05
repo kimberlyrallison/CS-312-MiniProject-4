@@ -1,0 +1,89 @@
+.blogPost {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header header deleteButton editButton"
+      "info info info info"
+      "postContent postContent postContent postContent"
+      "postContent postContent postContent postContent";
+      position: relative;
+      background-color: lightgray;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 5px;
+      font-family: monospace;  
+  }
+  .title {
+      grid-area: header;
+      padding:  5px;
+      box-sizing: border-box;
+      font-size: x-large;
+  }
+  .editButton {
+      grid-area: editButton;
+      margin: 5px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      padding: 5px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  .deleteButton {
+      grid-area: deleteButton;
+      margin: 5px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      padding: 5px;
+      text-align: center;
+      border-color:whitesmoke;
+  }
+  .info {
+      grid-area: info;
+      font-size: small;
+      margin-left: 5px;
+  }
+  .postContent {
+      grid-area: postContent;
+      margin: 5px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      padding: 5px;
+      font-size: medium;
+  }
+  .headerBlock {
+    position: relative;
+    background-color: dimgrey;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.blogTitle {
+    width: 50%;
+    height: 50px;
+    float: left;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: monospace;
+    font-size: 40px;
+}
+.newPostButton {
+    float: right;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-color:black;
+    background-color: whitesmoke;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+.blogContent {
+    border-radius: 10px;
+    position: relative;
+    background-color: whitesmoke;
+    left: 15%;
+    width: 70%;
+    padding: 10px;
+}
